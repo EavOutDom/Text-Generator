@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Text-Generator/static/css/main.d836abe7.css",
+    "main.js": "/Text-Generator/static/js/main.5222ead8.js",
+    "index.html": "/Text-Generator/index.html",
+    "main.d836abe7.css.map": "/Text-Generator/static/css/main.d836abe7.css.map",
+    "main.5222ead8.js.map": "/Text-Generator/static/js/main.5222ead8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d836abe7.css",
+    "static/js/main.5222ead8.js"
+  ]
+}
