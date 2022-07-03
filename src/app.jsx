@@ -8,18 +8,26 @@ const App = () => {
         e.preventDefault();
         let amount = parseInt(count);
         console.log(text.length);
-        if(amount <= 0){
-          amount = 1;
+        if (amount <= 0) {
+            amount = 1;
         }
-        if(amount > 9){
-          amount = 9;
+        if (amount > 9) {
+            amount = 9;
         }
         setTexts(text.slice(0, amount));
     };
     return (
-        <div className={"text-center my-6"}>
-            <h2 className={"text-3xl font-semibold my-2"}>Lorem Ipsum</h2>
-            <div className={"h-1 w-44 bg-white mx-auto"}></div>
+        <div className={"text-center my-6 px-2"}>
+            <h2
+                className={
+                    "md:text-3xl text-xl duration-500 font-semibold my-2"
+                }
+            >
+                Lorem Ipsum
+            </h2>
+            <div
+                className={"h-1 md:w-44 w-32 duration-500 bg-white mx-auto"}
+            ></div>
             <form
                 className="text-center my-8 flex justify-center items-center"
                 onSubmit={handleSubmit}
@@ -50,7 +58,13 @@ const App = () => {
             </form>
             <article>
                 {texts.map((item, index) => {
-                    return <p key={index}>{item}</p>;
+                    return (
+                        <p key={index}>
+                            <div>{item}</div>
+                            <span className={'w-full flex items-start text-sm text-gray-400'}>{index + 1}</span>
+                            <div className={'bg-gray-400 w-full h-[2px]'}></div>
+                        </p>
+                    );
                 })}
             </article>
         </div>
